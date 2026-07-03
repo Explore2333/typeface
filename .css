@@ -1,8 +1,0 @@
-@font-face {
-    font-family: "Myfont";
-    src=url("/Downloads/Myfont-Regular.otf") format("opentype");
-}
-
-.my-font {
-    font-family: "Myfont", serif;
-}

@@ -12,3 +12,111 @@
 body {
     background-color: lightblue;
 }
+
+.topnav {
+    background-color: #473939;
+    overflow: hidden;
+    display: flex;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: var(white);
+    padding: 12px;
+    border-radius: 8px;
+    transition: background color 0.3s, color 0.3s;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 19px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #dfcc8c;
+    color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(238, 205, 138, 0.8);
+    padding: 24px;
+    color: white;
+    z-index: 100;
+    box-shadow: 0x 4px 12px rgb(0, 0, 0, 0.5);
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    margin: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
+}
+
+
+
+footer {
+    background-color: var(rgb(160, 80, 80));
+    color: #e0e0e0;
+    padding: 48px;
+    text-align: center;
+    margin-top: 48px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero {
+    background: var(black);
+    color: white;
+    padding: 96px 24px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: padding 1s ease-in-out;
+}
+
+
+.image-container {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+    animation: slideUp ls ease-out forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.box {
+    background-color: #e7dbaf;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.mbox {
+    background-color: #8aceff;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 15px;
+}
